@@ -7,25 +7,11 @@
 //
 
 import Foundation
-/*
-print("Hello, World!")
-var variable=0;
-let timer=Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: {_ in
-    variable += 1;
-    print("Google \(variable)");
-});
-let loop=RunLoop.main;
-loop.add(timer, forMode: RunLoopMode.defaultRunLoopMode);
-loop.run();
-while(true)
-{
-    sleep(1);
-}
- */
-var str="Arif Rahman";
-var arr=str.components(separatedBy: " ");
 
-for a in arr{
-    print("\n Code Working : \(a)");
-}
+var str="Arif Rahman We are Working with String Class";
 
+str=str.uppercased();
+str=str.substring(with:1..<5);
+str=str.substring(from:str.index(str.endIndex, offsetBy: -6) );
+
+print("\n\(str)");
