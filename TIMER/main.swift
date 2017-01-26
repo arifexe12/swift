@@ -11,7 +11,11 @@ import Foundation
 var str="Arif Rahman We are Working with String Class";
 
 str=str.uppercased();
-str=str.substring(with:1..<5);
+var start=str.index(str.startIndex, offsetBy: 0);
+var end=str.index(str.endIndex, offsetBy: -7);
+var range=start..<end;
+str=str.substring(with:range);
+print("\n\(str)");
 str=str.substring(from:str.index(str.endIndex, offsetBy: -6) );
 
 print("\n\(str)");
