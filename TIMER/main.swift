@@ -18,4 +18,8 @@ str=str.substring(with:range);
 print("\n\(str)");
 str=str.substring(from:str.index(str.endIndex, offsetBy: -6) );
 
-print("\n\(str)");
+print("\n\(str.trimmingCharacters(in:CharacterSet.whitespacesAndNewlines))");
+
+for  i in str.characters{
+    print(i);
+}
